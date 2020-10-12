@@ -1,3 +1,6 @@
+/* This is your base Tailwin CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Do not write any custom css in this file */
