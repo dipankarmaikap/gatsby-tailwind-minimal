@@ -6,5 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`],
+  plugins: [
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true, // Enable tailwindcss support
+        purgeOnly: [`src/css/global.css`], // Purge only these files/folders
+      },
+    },
+  ],
 }
